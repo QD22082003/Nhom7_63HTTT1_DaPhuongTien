@@ -72,7 +72,7 @@
             this.tabControl1.Location = new System.Drawing.Point(1, 12);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(810, 412);
+            this.tabControl1.Size = new System.Drawing.Size(841, 416);
             this.tabControl1.TabIndex = 1;
             // 
             // tabPage1
@@ -93,14 +93,14 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(802, 383);
+            this.tabPage1.Size = new System.Drawing.Size(833, 387);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Thao tác đơn giản với video";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // button11
             // 
-            this.button11.Location = new System.Drawing.Point(633, 299);
+            this.button11.Location = new System.Drawing.Point(633, 302);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(176, 37);
             this.button11.TabIndex = 12;
@@ -347,7 +347,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(902, 458);
+            this.ClientSize = new System.Drawing.Size(842, 434);
             this.Controls.Add(this.tabControl1);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
