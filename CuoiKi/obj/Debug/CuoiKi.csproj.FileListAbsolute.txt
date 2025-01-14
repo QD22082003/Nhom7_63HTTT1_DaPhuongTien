@@ -8,3 +8,13 @@ D:\Hoc\Ki7\DaPhuongTien\cuoiki\CuoiKi\CuoiKi\obj\Debug\CuoiKi.csproj.GenerateRes
 D:\Hoc\Ki7\DaPhuongTien\cuoiki\CuoiKi\CuoiKi\obj\Debug\CuoiKi.csproj.CoreCompileInputs.cache
 D:\Hoc\Ki7\DaPhuongTien\cuoiki\CuoiKi\CuoiKi\obj\Debug\CuoiKi.exe
 D:\Hoc\Ki7\DaPhuongTien\cuoiki\CuoiKi\CuoiKi\obj\Debug\CuoiKi.pdb
+D:\Ki_7\DPT\BTL\Nhom7_63HTTT1_DaPhuongTien\CuoiKi\bin\Debug\CuoiKi.exe.config
+D:\Ki_7\DPT\BTL\Nhom7_63HTTT1_DaPhuongTien\CuoiKi\bin\Debug\CuoiKi.exe
+D:\Ki_7\DPT\BTL\Nhom7_63HTTT1_DaPhuongTien\CuoiKi\bin\Debug\CuoiKi.pdb
+D:\Ki_7\DPT\BTL\Nhom7_63HTTT1_DaPhuongTien\CuoiKi\obj\Debug\CuoiKi.csproj.AssemblyReference.cache
+D:\Ki_7\DPT\BTL\Nhom7_63HTTT1_DaPhuongTien\CuoiKi\obj\Debug\CuoiKi.Form1.resources
+D:\Ki_7\DPT\BTL\Nhom7_63HTTT1_DaPhuongTien\CuoiKi\obj\Debug\CuoiKi.Properties.Resources.resources
+D:\Ki_7\DPT\BTL\Nhom7_63HTTT1_DaPhuongTien\CuoiKi\obj\Debug\CuoiKi.csproj.GenerateResource.cache
+D:\Ki_7\DPT\BTL\Nhom7_63HTTT1_DaPhuongTien\CuoiKi\obj\Debug\CuoiKi.csproj.CoreCompileInputs.cache
+D:\Ki_7\DPT\BTL\Nhom7_63HTTT1_DaPhuongTien\CuoiKi\obj\Debug\CuoiKi.exe
+D:\Ki_7\DPT\BTL\Nhom7_63HTTT1_DaPhuongTien\CuoiKi\obj\Debug\CuoiKi.pdb
