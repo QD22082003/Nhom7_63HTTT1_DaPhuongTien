@@ -224,7 +224,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 25);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(802, 383);
+            this.tabPage2.Size = new System.Drawing.Size(833, 387);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Tạo phụ đề tự động qua video";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -277,7 +277,7 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 25);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(802, 383);
+            this.tabPage3.Size = new System.Drawing.Size(833, 387);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Nhận diện hình ảnh tương đồng qua video";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -351,7 +351,7 @@
             this.Controls.Add(this.tabControl1);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Nhóm 7 63HTTT1";
+            this.Text = "Nhóm 7 63HTTT1 Bùi Quang Đạo";
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
