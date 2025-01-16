@@ -28,3 +28,11 @@ D:\Hoc\Ki7\DaPhuongTien\cuoiki\CuoiKi\Nhom7_63HTTT1_DaPhuongTien\CuoiKi\obj\Debu
 D:\Hoc\Ki7\DaPhuongTien\cuoiki\CuoiKi\Nhom7_63HTTT1_DaPhuongTien\CuoiKi\obj\Debug\CuoiKi.csproj.CoreCompileInputs.cache
 D:\Hoc\Ki7\DaPhuongTien\cuoiki\CuoiKi\Nhom7_63HTTT1_DaPhuongTien\CuoiKi\obj\Debug\CuoiKi.exe
 D:\Hoc\Ki7\DaPhuongTien\cuoiki\CuoiKi\Nhom7_63HTTT1_DaPhuongTien\CuoiKi\obj\Debug\CuoiKi.pdb
+D:\Ki_7\DPT\BTL\Nhom7_63HTTT1_DaPhuongTien\CuoiKi\obj\Debug\CuoiKi.Form_PlayVideo.resources
+D:\Ki_7\DPT\BTL\Nhom7_63HTTT1_DaPhuongTien\CuoiKi\obj\Debug\CuoiKi.Form_AddImageToAudio.resources
+D:\Ki_7\DPT\BTL\Nhom7_63HTTT1_DaPhuongTien\CuoiKi\obj\Debug\CuoiKi.Form_ExtractAudio.resources
+D:\Ki_7\DPT\BTL\Nhom7_63HTTT1_DaPhuongTien\CuoiKi\bin\Debug\Interop.WMPLib.dll
+D:\Ki_7\DPT\BTL\Nhom7_63HTTT1_DaPhuongTien\CuoiKi\bin\Debug\AxInterop.WMPLib.dll
+D:\Ki_7\DPT\BTL\Nhom7_63HTTT1_DaPhuongTien\CuoiKi\obj\Debug\Interop.WMPLib.dll
+D:\Ki_7\DPT\BTL\Nhom7_63HTTT1_DaPhuongTien\CuoiKi\obj\Debug\AxInterop.WMPLib.dll
+D:\Ki_7\DPT\BTL\Nhom7_63HTTT1_DaPhuongTien\CuoiKi\obj\Debug\CuoiKi.csproj.ResolveComReference.cache
