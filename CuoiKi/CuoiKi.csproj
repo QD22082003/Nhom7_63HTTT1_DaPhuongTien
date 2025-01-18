@@ -46,7 +46,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Dao_CatVideo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dao_CatVideo.Designer.cs">
+      <DependentUpon>Dao_CatVideo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dao_Mute.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dao_Mute.Designer.cs">
+      <DependentUpon>Dao_Mute.cs</DependentUpon>
+    </Compile>
     <Compile Include="FFmpegHelper.cs" />
+    <Compile Include="Dao_FileVideovsFileAudio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dao_FileVideovsFileAudio.Designer.cs">
+      <DependentUpon>Dao_FileVideovsFileAudio.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -128,6 +146,15 @@
     <Compile Include="Form_SpeedVideo.Designer.cs">
       <DependentUpon>Form_SpeedVideo.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Dao_CatVideo.resx">
+      <DependentUpon>Dao_CatVideo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dao_Mute.resx">
+      <DependentUpon>Dao_Mute.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dao_FileVideovsFileAudio.resx">
+      <DependentUpon>Dao_FileVideovsFileAudio.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

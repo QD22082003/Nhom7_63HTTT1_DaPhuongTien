@@ -153,6 +153,7 @@
             this.button7.TabIndex = 8;
             this.button7.Text = "Cắt video";
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button6
             // 
@@ -163,6 +164,7 @@
             this.button6.TabIndex = 7;
             this.button6.Text = "Trộn video với một file âm thanh";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button5
             // 
@@ -173,6 +175,7 @@
             this.button5.TabIndex = 6;
             this.button5.Text = "Tắt âm thanh";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // btnAddImageToAudio
             // 

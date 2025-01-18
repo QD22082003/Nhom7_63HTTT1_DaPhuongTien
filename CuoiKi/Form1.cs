@@ -86,6 +86,24 @@ namespace CuoiKi
             Ha_TrichXuatAmThanhVideo extractAudioForm = new Ha_TrichXuatAmThanhVideo();
             extractAudioForm.Show();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Dao_Mute extractAudioForm = new Dao_Mute();
+            extractAudioForm.Show();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Dao_FileVideovsFileAudio extractAudioForm = new Dao_FileVideovsFileAudio();
+            extractAudioForm.Show();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            Dao_CatVideo extractAudioForm = new Dao_CatVideo();
+            extractAudioForm.Show();
+        }
         // ******************************************************************
 
 
