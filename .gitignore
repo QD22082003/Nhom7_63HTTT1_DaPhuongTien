@@ -1,0 +1,22 @@
+# Build Folders
+bin/
+obj/
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Auto-generated files
+*.log
+*.tlog
+*.cache
+*.dll
+*.pdb
+
+# Visual Studio Code workspace settings
+.vscode/
+
+# Package files
+*.nupkg
