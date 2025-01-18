@@ -196,6 +196,7 @@
             this.button1.TabIndex = 2;
             this.button1.Text = "Danh sách ảnh => Video";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnListAnh
             // 
@@ -205,6 +206,7 @@
             this.btnListAnh.TabIndex = 1;
             this.btnListAnh.Text = "Video => danh sách ảnh";
             this.btnListAnh.UseVisualStyleBackColor = true;
+            this.btnListAnh.Click += new System.EventHandler(this.btnListAnh_Click);
             // 
             // btnThongTin
             // 
@@ -214,6 +216,7 @@
             this.btnThongTin.TabIndex = 0;
             this.btnThongTin.Text = "Thông tin video";
             this.btnThongTin.UseVisualStyleBackColor = true;
+            this.btnThongTin.Click += new System.EventHandler(this.btnThongTin_Click);
             // 
             // tabPage2
             // 
@@ -255,6 +258,7 @@
             this.button13.TabIndex = 1;
             this.button13.Text = "Nhận diện giọng nói";
             this.button13.UseVisualStyleBackColor = true;
+            this.button13.Click += new System.EventHandler(this.button13_Click);
             // 
             // button12
             // 
@@ -264,6 +268,7 @@
             this.button12.TabIndex = 0;
             this.button12.Text = "Trích xuất âm thanh từ video";
             this.button12.UseVisualStyleBackColor = true;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
             // tabPage3
             // 
@@ -351,7 +356,8 @@
             this.Controls.Add(this.tabControl1);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Nhóm 7 63HTTT1 Bùi Quang Đạo";
+            this.Text = "Nhóm 7";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
