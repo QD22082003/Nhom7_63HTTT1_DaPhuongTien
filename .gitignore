@@ -16,7 +16,7 @@ obj/
 *.pdb
 
 # Visual Studio Code workspace settings
-.vscode/
+.vs/
 
 # Package files
 *.nupkg
