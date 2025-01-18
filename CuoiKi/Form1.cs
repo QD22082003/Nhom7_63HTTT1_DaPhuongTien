@@ -62,6 +62,30 @@ namespace CuoiKi
             Form_ConcatenateVideo form_ConcatenateVideo = new Form_ConcatenateVideo();
             form_ConcatenateVideo.ShowDialog();
         }
+
+        private void btnThongTin_Click(object sender, EventArgs e)
+        {
+            Ha_FormInfoVideo extractAudioForm = new Ha_FormInfoVideo();
+            extractAudioForm.Show();
+        }
+
+        private void btnListAnh_Click(object sender, EventArgs e)
+        {
+            Ha_FormExtractFrames extractAudioForm = new Ha_FormExtractFrames();
+            extractAudioForm.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Ha_FormMergeImagestoVideo extractAudioForm = new Ha_FormMergeImagestoVideo();
+            extractAudioForm.Show();
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            Ha_TrichXuatAmThanhVideo extractAudioForm = new Ha_TrichXuatAmThanhVideo();
+            extractAudioForm.Show();
+        }
         // ******************************************************************
 
 

@@ -216,6 +216,7 @@
             this.button1.TabIndex = 2;
             this.button1.Text = "Danh sách ảnh => Video";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnListAnh
             // 
@@ -226,6 +227,7 @@
             this.btnListAnh.TabIndex = 1;
             this.btnListAnh.Text = "Video => danh sách ảnh";
             this.btnListAnh.UseVisualStyleBackColor = true;
+            this.btnListAnh.Click += new System.EventHandler(this.btnListAnh_Click);
             // 
             // btnThongTin
             // 
@@ -236,6 +238,7 @@
             this.btnThongTin.TabIndex = 0;
             this.btnThongTin.Text = "Thông tin video";
             this.btnThongTin.UseVisualStyleBackColor = true;
+            this.btnThongTin.Click += new System.EventHandler(this.btnThongTin_Click);
             // 
             // tabPage2
             // 
@@ -291,6 +294,7 @@
             this.button12.TabIndex = 0;
             this.button12.Text = "Trích xuất âm thanh từ video";
             this.button12.UseVisualStyleBackColor = true;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
             // tabPage3
             // 

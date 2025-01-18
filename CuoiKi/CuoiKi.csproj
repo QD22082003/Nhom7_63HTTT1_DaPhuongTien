@@ -95,6 +95,31 @@
     <Compile Include="Form_SplitVideo.Designer.cs">
       <DependentUpon>Form_SplitVideo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Ha_FFmpegHelper.cs" />
+    <Compile Include="Ha_FormExtractFrames.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ha_FormExtractFrames.Designer.cs">
+      <DependentUpon>Ha_FormExtractFrames.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ha_FormInfoVideo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ha_FormInfoVideo.Designer.cs">
+      <DependentUpon>Ha_FormInfoVideo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ha_FormMergeImagestoVideo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ha_FormMergeImagestoVideo.Designer.cs">
+      <DependentUpon>Ha_FormMergeImagestoVideo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ha_TrichXuatAmThanhVideo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ha_TrichXuatAmThanhVideo.Designer.cs">
+      <DependentUpon>Ha_TrichXuatAmThanhVideo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Form_SpeedVideo.cs">
@@ -126,6 +151,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form_SplitVideo.resx">
       <DependentUpon>Form_SplitVideo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ha_FormExtractFrames.resx">
+      <DependentUpon>Ha_FormExtractFrames.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ha_FormInfoVideo.resx">
+      <DependentUpon>Ha_FormInfoVideo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ha_FormMergeImagestoVideo.resx">
+      <DependentUpon>Ha_FormMergeImagestoVideo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ha_TrichXuatAmThanhVideo.resx">
+      <DependentUpon>Ha_TrichXuatAmThanhVideo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
