@@ -38,6 +38,30 @@ namespace CuoiKi
             Form_AddImageToAudio form_AddImageToAudio = new Form_AddImageToAudio();
             form_AddImageToAudio.ShowDialog();
         }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            Form_SpeedVideo form_SpeedVideo = new Form_SpeedVideo();
+            form_SpeedVideo.ShowDialog();
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            Form_FormatConverter form_FormatConverter = new Form_FormatConverter();
+            form_FormatConverter.ShowDialog();
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            Form_SplitVideo form_SplitVideo = new Form_SplitVideo();
+            form_SplitVideo.ShowDialog();
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            Form_ConcatenateVideo form_ConcatenateVideo = new Form_ConcatenateVideo();
+            form_ConcatenateVideo.ShowDialog();
+        }
         // ******************************************************************
 
 
