@@ -38,6 +38,7 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -66,6 +67,7 @@
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(323, 139);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 11;
             this.pictureBox2.TabStop = false;
             // 
@@ -87,16 +89,18 @@
             this.btnAnhVideo.TabIndex = 9;
             this.btnAnhVideo.Text = "Chọn video";
             this.btnAnhVideo.UseVisualStyleBackColor = true;
+            this.btnAnhVideo.Click += new System.EventHandler(this.btnAnhVideo_Click);
             // 
             // btnTimAnhTuongDong
             // 
-            this.btnTimAnhTuongDong.Location = new System.Drawing.Point(304, 238);
+            this.btnTimAnhTuongDong.Location = new System.Drawing.Point(312, 230);
             this.btnTimAnhTuongDong.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnTimAnhTuongDong.Name = "btnTimAnhTuongDong";
             this.btnTimAnhTuongDong.Size = new System.Drawing.Size(173, 39);
             this.btnTimAnhTuongDong.TabIndex = 8;
             this.btnTimAnhTuongDong.Text = "Tìm kiếm ảnh tương đồng";
             this.btnTimAnhTuongDong.UseVisualStyleBackColor = true;
+            this.btnTimAnhTuongDong.Click += new System.EventHandler(this.btnTimAnhTuongDong_Click);
             // 
             // btnChonAnh
             // 
@@ -107,6 +111,7 @@
             this.btnChonAnh.TabIndex = 7;
             this.btnChonAnh.Text = "Chọn ảnh lên";
             this.btnChonAnh.UseVisualStyleBackColor = true;
+            this.btnChonAnh.Click += new System.EventHandler(this.btnChonAnh_Click);
             // 
             // textBox1
             // 
@@ -134,11 +139,22 @@
             this.label4.TabIndex = 16;
             this.label4.Text = "label4";
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(372, 271);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(44, 16);
+            this.label5.TabIndex = 17;
+            this.label5.Text = "label5";
+            this.label5.Visible = false;
+            // 
             // Form_LBP_Thai
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.textBox1);
@@ -170,5 +186,6 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
     }
 }

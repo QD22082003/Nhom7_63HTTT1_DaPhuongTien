@@ -59,25 +59,48 @@ namespace CuoiKi
             }
         }
 
-        private void btnTimAnhTuongDong_Click(object sender, EventArgs e)
+        private async void btnTimAnhTuongDong_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(imagePath) || string.IsNullOrEmpty(videoPath))
             {
                 MessageBox.Show("Vui lòng chọn cả ảnh và video.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-            var (result, bestFrame) = CalculateSimilarity(imagePath, videoPath);
-            textBox1.Text = result;
 
-            if (bestFrame != null)
+            // Hiển thị Loading
+            label5.Visible = true;
+            label5.Text = "Đang xử lý...";
+            btnTimAnhTuongDong.Enabled = false;
+
+            try
             {
-                pictureBox2.Image = MatToBitmap(bestFrame);
+                // Xử lý tìm kiếm ảnh tương đồng trong một Task
+                var result = await Task.Run(() => CalculateSimilarity(imagePath, videoPath));
+
+                // Hiển thị kết quả
+                textBox1.Text = result.result;
+
+                if (result.bestFrame != null)
+                {
+                    pictureBox2.Image = MatToBitmap(result.bestFrame);
+                }
+                else
+                {
+                    MessageBox.Show("Không tìm thấy frame tương đồng.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
             }
-            else
+            catch (Exception ex)
             {
-                MessageBox.Show("Không tìm thấy frame tương đồng.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show($"Lỗi: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                // Ẩn Loading sau khi xử lý xong
+                label5.Visible = false;
+                btnTimAnhTuongDong.Enabled = true;
             }
         }
+
 
         private Bitmap MatToBitmap(Mat mat)
         {
@@ -151,7 +174,6 @@ namespace CuoiKi
                 return ($"Lỗi khi xử lý ảnh hoặc video: {ex.Message}", null);
             }
         }
-
 
 
         private Mat CalculateLBP(Mat img)
@@ -239,5 +261,7 @@ namespace CuoiKi
             double denominator = Math.Sqrt(denominator1) * Math.Sqrt(denominator2);
             return denominator == 0 ? 0 : numerator / denominator;
         }
+
+        
     }
 }
