@@ -110,6 +110,12 @@ namespace CuoiKi
             Form_LBP_Thai form_LBP_Thai = new Form_LBP_Thai();
             form_LBP_Thai.Show();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Form_LBP_Giang form_LBP_Giang = new Form_LBP_Giang();
+            form_LBP_Giang.Show();
+        }
     }
     // ******************************************************************
 }
