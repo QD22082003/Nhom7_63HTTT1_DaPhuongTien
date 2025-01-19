@@ -103,7 +103,7 @@ namespace CuoiKi
                     // Cập nhật log trong listBox và khoảng cách
                     this.Invoke((MethodInvoker)delegate
                     {
-                        listBoxLog.Items.Add($"Khung hình {frameIndex}: Độ tương tự = {distance:F2}");
+                        listBoxLog.Items.Add($"Khung hình {frameIndex}: Khoảng cách = {distance:F5}");
 
                         // Kiểm tra và giới hạn giá trị của progressBar.Value
                         if (frameIndex >= progressBar.Minimum && frameIndex <= progressBar.Maximum)
@@ -149,7 +149,7 @@ namespace CuoiKi
         private float[] ComputeLBP(Mat image)
         {
             Mat grayImage = new Mat();
-            Cv2.CvtColor(image, grayImage, ColorConversionCodes.BGR2GRAY); // thư viện để chuyển ảnh màu gray 
+            Cv2.CvtColor(image, grayImage, ColorConversionCodes.BGR2GRAY); // Chuyển ảnh sang thang độ xám
 
             // Khởi tạo histogram
             int[] hist = new int[256];
@@ -157,23 +157,23 @@ namespace CuoiKi
             byte[] data = new byte[grayImage.Rows * grayImage.Cols * grayImage.Channels()];
             Marshal.Copy(dataPtr, data, 0, data.Length);
 
-            // Tính LBP cho từng pixel kệ cứ ghi vào xong bảo bọn e mỗi người làm cái nhưng của a khác thật 
+            // Tính LBP cho từng pixel 
             for (int y = 1; y < grayImage.Rows - 1; y++)
             {
                 for (int x = 1; x < grayImage.Cols - 1; x++)
                 {
-                    byte center = data[y * grayImage.Cols + x];
-                    byte lbpCode = 0;
+                    byte center = data[y * grayImage.Cols + x]; // Giá trị mức xám của điểm trung tâm
+                    byte lbpCode = 0; // Lưu mã LBP của pixel hiện tại
 
-                    for (int i = -1; i <= 1; i++)
+                    for (int i = -1; i <= 1; i++) // Xét các hàng lân cận (-1, 0, 1)
                     {
-                        for (int j = -1; j <= 1; j++)
+                        for (int j = -1; j <= 1; j++) // Xét các cột lân cận (-1, 0, 1)
                         {
-                            if (i == 0 && j == 0) continue;
-                            byte neighbor = data[(y + i) * grayImage.Cols + (x + j)];
-                            lbpCode <<= 1;
-                            if (neighbor > center)
-                                lbpCode |= 1;
+                            if (i == 0 && j == 0) continue; // Bỏ qua điểm trung tâm
+                            byte neighbor = data[(y + i) * grayImage.Cols + (x + j)]; // Giá trị mức xám của điểm lân cận
+                            lbpCode <<= 1; // Dịch trái 1 bit để tạo mã nhị phân LBP
+                            if (neighbor > center) // So sánh mức xám giữa điểm lân cận và điểm trung tâm
+                                lbpCode |= 1; // Nếu điểm lân cận sáng hơn, gán giá trị 1
                         }
                     }
 
@@ -191,15 +191,17 @@ namespace CuoiKi
             return normalizedHist;
         }
 
-        // Hàm so sánh histogram bằng khoảng cách Chi-Square
+        // Hàm so sánh histogram bằng khoảng cách Euclidean 
         private double CompareHistograms(float[] hist1, float[] hist2)
         {
             double distance = 0;
             for (int i = 0; i < hist1.Length; i++)
             {
-                distance += Math.Pow(hist1[i] - hist2[i], 2);
+                double numerator = Math.Pow(hist1[i] - hist2[i], 2);
+                double denominator = hist1[i] + hist2[i] + 1e-10; // Tránh chia cho 0
+                distance += numerator / denominator;
             }
-            return Math.Sqrt(distance);
+            return distance;
         }
 
         //
