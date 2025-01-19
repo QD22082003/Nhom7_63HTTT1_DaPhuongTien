@@ -42,7 +42,7 @@ namespace CuoiKi
             string ffmpeg = @"D:\Hoc\Ki7\DaPhuongTien\ffmpeg-2024-12-16-git-d2096679d5-essentials_build\bin\ffmpeg.exe";
             string output = resultPath + @"\mute_videoa7.mp4";
             string para = $"-i {videoFileName} -an {output}";
-            FFmpegHelper.RunExe(ffmpeg, para);
+            FFmpegHelper.RunExe("ffmpeg", para);
         }
     }
 }

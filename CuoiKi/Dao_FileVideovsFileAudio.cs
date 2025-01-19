@@ -42,7 +42,7 @@ namespace CuoiKi
             string output = $"{resultPath}\\VideoDaTron.mp4";
             string para = $"-i \"{videoFileName}\" -i \"{audioFileName}\" -c:v copy -c:a aac -strict experimental \"{output}\"";
 
-            FFmpegHelper.RunExe(ffmpeg, para);
+            FFmpegHelper.RunExe("ffmpeg", para);
 
             MessageBox.Show("Đã trộn video và âm thanh thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }

@@ -75,7 +75,7 @@ namespace CuoiKi
             string ffmpeg = ffmpegPath;
             string parameters = $"-i \"{selectedVideo}\" -vn -ar 44100 -ac 2 -ab 192k -f mp3 \"{outputAudioPath}\"";
 
-            FFmpegHelper.RunExe(ffmpeg, parameters);
+            FFmpegHelper.RunExe("ffmpeg", parameters);
         }
 
         // Folder OuputAudio

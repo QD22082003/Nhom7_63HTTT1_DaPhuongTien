@@ -76,7 +76,7 @@ namespace CuoiKi
             string para = $"-i \"{videoFileName}\" -ss {startTime} -to {endTime} -c:v libx264 -c:a aac -strict experimental \"{output}\"";
 
             // Chạy lệnh
-            FFmpegHelper.RunExe(ffmpeg, para);
+            FFmpegHelper.RunExe("ffmpeg", para);
 
             MessageBox.Show("Cắt video thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }

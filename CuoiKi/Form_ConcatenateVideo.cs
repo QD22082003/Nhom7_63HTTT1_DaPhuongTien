@@ -70,7 +70,7 @@ namespace CuoiKi
                 string ffmpegArgs = $"-f concat -safe 0 -i \"{listFilePath}\" -c copy \"{outputFilePath}\"";
 
                 // Chạy FFmpeg để ghép video
-                FFmpegHelper.RunExe(ffmpegPath, ffmpegArgs);
+                FFmpegHelper.RunExe("ffmpeg", ffmpegArgs);
 
                 // Thông báo thành công
                 MessageBox.Show($"Video đã được ghép thành công và lưu tại: {outputFilePath}", "Thành công", MessageBoxButtons.OK, MessageBoxIcon.Information);

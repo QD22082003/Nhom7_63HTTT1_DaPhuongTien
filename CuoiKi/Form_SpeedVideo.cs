@@ -74,7 +74,7 @@ namespace CuoiKi
                 string args = $"-i \"{inputPath}\" -vf \"setpts={1 / speedFactor}*PTS\" \"{outputFile}\"";
 
                 // Chạy lệnh FFmpeg
-                FFmpegHelper.RunExe(ffmpegPath, args);
+                FFmpegHelper.RunExe("ffmpeg", args);
 
                 // Thành công
                 MessageBox.Show("Chỉnh tốc độ video thành công!", "Thành công", MessageBoxButtons.OK, MessageBoxIcon.Information);

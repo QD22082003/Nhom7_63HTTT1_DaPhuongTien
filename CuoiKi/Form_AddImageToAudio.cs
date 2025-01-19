@@ -63,7 +63,7 @@ namespace CuoiKi
             //string parameters = $"-loop 1 -i \"{selectedImagePath}\" -i \"{selectedAudioPath}\" -shortest -c:v libx264 -c:a aac -b:a 192k -pix_fmt yuv420p \"{outputVideoPath}\"";
             string parameters = $"-loop 1 -i \"{optimizedImagePath}\" -i \"{selectedAudioPath}\" -shortest -c:v libx264 -preset ultrafast -crf 23 -c:a aac -b:a 192k -pix_fmt yuv420p \"{outputVideoPath}\"";
             // Gọi FFmpeg để thực hiện quá trình tạo video
-            FFmpegHelper.RunExe(ffmpeg, parameters);
+            FFmpegHelper.RunExe("ffmpeg", parameters);
         }
         
 

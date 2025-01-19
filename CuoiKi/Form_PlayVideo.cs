@@ -78,7 +78,7 @@ namespace CuoiKi
 
             string ffplay = ffplayPath;
             string parameters = $"-autoexit \"{selectedVideo}\"";
-            FFmpegHelper.RunExe(ffplay, parameters);
+            FFmpegHelper.RunExe("ffmpeg", parameters);
         }
 
         private void btnBack_Click(object sender, EventArgs e)

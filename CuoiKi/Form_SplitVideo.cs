@@ -72,7 +72,7 @@ namespace CuoiKi
                 }
 
                 // Chạy FFmpeg để cắt video
-                FFmpegHelper.RunExe(ffmpegPath, ffmpegArgs.ToString());
+                FFmpegHelper.RunExe("ffmpeg", ffmpegArgs.ToString());
 
                 // Thông báo thành công
                 MessageBox.Show($"Video đã được chia thành {numParts} phần thành công!", "Thành công", MessageBoxButtons.OK, MessageBoxIcon.Information);

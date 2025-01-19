@@ -56,7 +56,7 @@ namespace CuoiKi
                 string args = $"-i \"{inputPath}\" \"{outputPath}\"";
 
                 // Chạy FFmpeg
-                FFmpegHelper.RunExe(ffmpegPath, args);
+                FFmpegHelper.RunExe("ffmpeg", args);
 
                 // Thành công
                 MessageBox.Show($"Chuyển đổi định dạng video thành công!\nVideo đã được lưu tại: {outputPath}", "Thành công", MessageBoxButtons.OK, MessageBoxIcon.Information);

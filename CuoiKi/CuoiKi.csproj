@@ -122,12 +122,6 @@
     <Compile Include="Form_ConcatenateVideo.Designer.cs">
       <DependentUpon>Form_ConcatenateVideo.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form_CreateCaptionVideo.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form_CreateCaptionVideo.Designer.cs">
-      <DependentUpon>Form_CreateCaptionVideo.cs</DependentUpon>
-    </Compile>
     <Compile Include="Form_FormatConverter.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -217,9 +211,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form_ConcatenateVideo.resx">
       <DependentUpon>Form_ConcatenateVideo.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form_CreateCaptionVideo.resx">
-      <DependentUpon>Form_CreateCaptionVideo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_FormatConverter.resx">
       <DependentUpon>Form_FormatConverter.cs</DependentUpon>
