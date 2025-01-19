@@ -194,6 +194,7 @@ namespace CuoiKi
                 {
                     byte centerPixel = img.At<byte>(i, j);
                     int lbpValue = 0;
+
                     // Đọc các pixel xung quanh pixel trung tâm (8 pixel xung quanh)
                     lbpValue |= (img.At<byte>(i - 1, j - 1) >= centerPixel ? 1 : 0) << 7;
                     lbpValue |= (img.At<byte>(i - 1, j) >= centerPixel ? 1 : 0) << 6;
@@ -204,7 +205,7 @@ namespace CuoiKi
                     lbpValue |= (img.At<byte>(i + 1, j - 1) >= centerPixel ? 1 : 0) << 1;
                     lbpValue |= (img.At<byte>(i, j - 1) >= centerPixel ? 1 : 0) << 0;
 
-                    lbp.Set(i, j, (byte)lbpValue); // Lưu giá trị LBP vào ảnh 
+                    lbp.Set(i, j, (byte)lbpValue); // Lưu giá trị LBP vào ảnh
                 }
             }
 
