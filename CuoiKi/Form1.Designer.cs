@@ -49,19 +49,12 @@
             this.button13 = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnAnhVideo = new System.Windows.Forms.Button();
-            this.btnTimAnhTuongDong = new System.Windows.Forms.Button();
-            this.btnChonAnh = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -301,13 +294,8 @@
             // 
             // tabPage3
             // 
-            this.tabPage3.Controls.Add(this.label2);
-            this.tabPage3.Controls.Add(this.label1);
-            this.tabPage3.Controls.Add(this.pictureBox2);
-            this.tabPage3.Controls.Add(this.pictureBox1);
-            this.tabPage3.Controls.Add(this.btnAnhVideo);
-            this.tabPage3.Controls.Add(this.btnTimAnhTuongDong);
-            this.tabPage3.Controls.Add(this.btnChonAnh);
+            this.tabPage3.Controls.Add(this.button3);
+            this.tabPage3.Controls.Add(this.button2);
             this.tabPage3.Location = new System.Drawing.Point(4, 25);
             this.tabPage3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage3.Name = "tabPage3";
@@ -317,71 +305,24 @@
             this.tabPage3.Text = "Nhận diện hình ảnh tương đồng qua video";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
-            // label2
+            // button2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(548, 20);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(77, 16);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "Ảnh kết quả";
+            this.button2.Location = new System.Drawing.Point(179, 116);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(139, 70);
+            this.button2.TabIndex = 0;
+            this.button2.Text = "LBP - code tay";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
             // 
-            // label1
+            // button3
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(168, 20);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(56, 16);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Ảnh gốc";
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Location = new System.Drawing.Point(413, 49);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(351, 204);
-            this.pictureBox2.TabIndex = 4;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(37, 49);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(341, 204);
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
-            // 
-            // btnAnhVideo
-            // 
-            this.btnAnhVideo.Location = new System.Drawing.Point(304, 302);
-            this.btnAnhVideo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnAnhVideo.Name = "btnAnhVideo";
-            this.btnAnhVideo.Size = new System.Drawing.Size(173, 39);
-            this.btnAnhVideo.TabIndex = 2;
-            this.btnAnhVideo.Text = "Chọn video";
-            this.btnAnhVideo.UseVisualStyleBackColor = true;
-            // 
-            // btnTimAnhTuongDong
-            // 
-            this.btnTimAnhTuongDong.Location = new System.Drawing.Point(563, 302);
-            this.btnTimAnhTuongDong.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnTimAnhTuongDong.Name = "btnTimAnhTuongDong";
-            this.btnTimAnhTuongDong.Size = new System.Drawing.Size(173, 39);
-            this.btnTimAnhTuongDong.TabIndex = 1;
-            this.btnTimAnhTuongDong.Text = "Tìm kiếm ảnh tương đồng";
-            this.btnTimAnhTuongDong.UseVisualStyleBackColor = true;
-            // 
-            // btnChonAnh
-            // 
-            this.btnChonAnh.Location = new System.Drawing.Point(37, 302);
-            this.btnChonAnh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnChonAnh.Name = "btnChonAnh";
-            this.btnChonAnh.Size = new System.Drawing.Size(173, 39);
-            this.btnChonAnh.TabIndex = 0;
-            this.btnChonAnh.Text = "Chọn ảnh lên";
-            this.btnChonAnh.UseVisualStyleBackColor = true;
+            this.button3.Location = new System.Drawing.Point(496, 116);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(125, 70);
+            this.button3.TabIndex = 1;
+            this.button3.Text = "LBP - thư viện";
+            this.button3.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -397,9 +338,6 @@
             this.tabPage1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
-            this.tabPage3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -427,13 +365,8 @@
         private System.Windows.Forms.Button button13;
         private System.Windows.Forms.Button button15;
         private System.Windows.Forms.Button button14;
-        private System.Windows.Forms.Button btnAnhVideo;
-        private System.Windows.Forms.Button btnTimAnhTuongDong;
-        private System.Windows.Forms.Button btnChonAnh;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button2;
     }
 }
 

@@ -104,8 +104,12 @@ namespace CuoiKi
             Dao_CatVideo extractAudioForm = new Dao_CatVideo();
             extractAudioForm.Show();
         }
-        // ******************************************************************
 
-
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            Form_LBP_Thai form_LBP_Thai = new Form_LBP_Thai();
+            form_LBP_Thai.Show();
+        }
     }
+    // ******************************************************************
 }
